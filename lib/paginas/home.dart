@@ -18,18 +18,18 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     var ancho = MediaQuery.of(context).size.width;
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color.fromARGB(255, 18, 52, 81),
         appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        toolbarHeight: 60,
+        toolbarHeight: 100,
         title: Center(
           child: Container(
-            height: 50,
-            width: ancho * 0.3,
+            height: 90,
+            width: ancho * 0.4,
             decoration: BoxDecoration(
                 image: const DecorationImage(
-                    image: AssetImage("assets/img/icon.png"),
+                    image: AssetImage("assets/img/imm.jpeg"),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(10)),
           ),
@@ -69,10 +69,10 @@ class _HomeState extends State<Home> {
                                 width: ancho * 0.4,
                                 height: 40,
                                 child: const Text(
-                                  "MARTINEZ MEJIA, ANDY ERNESTO",
+                                  "ANDY ERNESTO MARTINEZ MEJIA",
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 10,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
                               ),
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
                                   "25-0064-2018",
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 10,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
                               ),
@@ -108,10 +108,10 @@ class _HomeState extends State<Home> {
                                   width: ancho * 0.4,
                                   height: 40,
                                   child: const Text(
-                                    "PEREZ REYES, TATIANA ELIZABETH",
+                                    " TATIANA ELIZABETH PEREZ REYES",
                                     style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 10,
+                                        fontSize: 15,
                                         fontWeight: FontWeight.bold),
                                   ),
                                 ),
@@ -125,7 +125,7 @@ class _HomeState extends State<Home> {
                                     "17-1703-2018",
                                     style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 10,
+                                        fontSize: 15,
                                         fontWeight: FontWeight.bold),
                                   ),
                                 ),
@@ -156,29 +156,6 @@ class _HomeState extends State<Home> {
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(20))),
                                   child: Stack(children: [
-                                    // Padding(
-                                    //   padding: const EdgeInsets.only(
-                                    //       right: 20, left: 20, top: 7),
-                                    //   child: SizedBox(
-                                    //       child: Text(
-                                    //     "Puesto ${listabebidas[index]['rank']}°",
-                                    //     textAlign: TextAlign.center,
-                                    //     // ignore: prefer_const_constructors
-                                    //     style: TextStyle(
-                                    //         fontWeight: FontWeight.bold,
-                                    //         fontSize: 12,
-                                    //         color: listabebidas[index]['rank'] ==
-                                    //                 1
-                                    //             ? Colors.amber[400]
-                                    //             : listabebidas[index]['rank'] == 2
-                                    //                 ? Colors.blueGrey[300]
-                                    //                 : listabebidas[index]
-                                    //                             ['rank'] ==
-                                    //                         3
-                                    //                     ? Colors.brown
-                                    //                     : Colors.black),
-                                    //   )),
-                                    // ),
                                     Padding(
                                       padding: const EdgeInsets.only(
                                           right: 20, left: 20, top: 25),

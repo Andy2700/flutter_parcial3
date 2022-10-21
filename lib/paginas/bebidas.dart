@@ -115,14 +115,14 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: const Text(
-                                    "Puntuación :",
+                                    "Categoria :",
                                     style: TextStyle(
                                         color: Colors.blueGrey, fontSize: 16),
                                   )),
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: Text(
-                                    widget.bebidasdetalle['strIngredient2'].toString(),
+                                    widget.bebidasdetalle['strCategory'].toString(),
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,
@@ -138,14 +138,14 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: const Text(
-                                    "Episodios :",
+                                    "Preparacion :",
                                     style: TextStyle(
                                         color: Colors.blueGrey, fontSize: 16),
                                   )),
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: Text(
-                                    widget.bebidasdetalle['strAlcoholic'].toString(),
+                                    widget.bebidasdetalle['strInstructions'].toString(),
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,
@@ -153,6 +153,29 @@ class _BebidasState extends State<Bebidas> {
                                   )),
                             ]),
                       ),
+                      // Padding(
+                      //   padding: const EdgeInsets.all(8.0),
+                      //   child: Row(
+                      //       mainAxisAlignment: MainAxisAlignment.start,
+                      //       children: [
+                      //         SizedBox(
+                      //             width: anchodeta * 0.3,
+                      //             child: const Text(
+                      //               "Puesto :",
+                      //               style: TextStyle(
+                      //                   color: Colors.blueGrey, fontSize: 16),
+                      //             )),
+                      //         // SizedBox(
+                      //         //     width: anchodeta * 0.3,
+                      //         //     child: Text(
+                      //         //       widget.bebidasdetalle['rank'].toString(),
+                      //         //       style: const TextStyle(
+                      //         //           color: Colors.black,
+                      //         //           fontSize: 20,
+                      //         //           fontWeight: FontWeight.bold),
+                      //         //     )),
+                      //       ]),
+                      // ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
@@ -161,37 +184,14 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: const Text(
-                                    "Puesto :",
-                                    style: TextStyle(
-                                        color: Colors.blueGrey, fontSize: 16),
-                                  )),
-                              // SizedBox(
-                              //     width: anchodeta * 0.3,
-                              //     child: Text(
-                              //       widget.bebidasdetalle['rank'].toString(),
-                              //       style: const TextStyle(
-                              //           color: Colors.black,
-                              //           fontSize: 20,
-                              //           fontWeight: FontWeight.bold),
-                              //     )),
-                            ]),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                  width: anchodeta * 0.3,
-                                  child: const Text(
-                                    "Estado :",
+                                    "Ingredientes :",
                                     style: TextStyle(
                                         color: Colors.blueGrey, fontSize: 16),
                                   )),
                               SizedBox(
                                   width: anchodeta * 0.5,
                                   child: Text(
-                                    widget.bebidasdetalle['strAlcoholic'].toString(),
+                                    widget.bebidasdetalle['strIngredient4'].toString(),
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,
