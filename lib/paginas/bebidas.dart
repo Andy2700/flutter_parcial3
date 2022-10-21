@@ -24,7 +24,7 @@ class _BebidasState extends State<Bebidas> {
             top: (altodeta * 0.01) - 10,
             child: CachedNetworkImage(
               width: anchodeta,
-              imageUrl: widget.bebidasdetalle['images']['jpg']['image_url'],
+              imageUrl: widget.bebidasdetalle['strDrinkThumb'],
               fit: BoxFit.fitWidth,
             ),
           ),
@@ -59,7 +59,7 @@ class _BebidasState extends State<Bebidas> {
                   padding: const EdgeInsets.only(
                       left: 10, right: 10, top: 4.0, bottom: 4.0),
                   child: Text(
-                    widget.bebidasdetalle['synopsis'],
+                    widget.bebidasdetalle['strGlass'],
                     maxLines: 5,
                     style: const TextStyle(color: Colors.white),
                   ),
@@ -99,7 +99,7 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.5,
                                   child: Text(
-                                    widget.bebidasdetalle['title'],
+                                    widget.bebidasdetalle['strDrink'],
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
@@ -122,7 +122,7 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: Text(
-                                    widget.bebidasdetalle['score'].toString(),
+                                    widget.bebidasdetalle['strIngredient2'].toString(),
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,
@@ -145,7 +145,7 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.3,
                                   child: Text(
-                                    widget.bebidasdetalle['episodes'].toString(),
+                                    widget.bebidasdetalle['strAlcoholic'].toString(),
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,
@@ -165,15 +165,15 @@ class _BebidasState extends State<Bebidas> {
                                     style: TextStyle(
                                         color: Colors.blueGrey, fontSize: 16),
                                   )),
-                              SizedBox(
-                                  width: anchodeta * 0.3,
-                                  child: Text(
-                                    widget.bebidasdetalle['rank'].toString(),
-                                    style: const TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold),
-                                  )),
+                              // SizedBox(
+                              //     width: anchodeta * 0.3,
+                              //     child: Text(
+                              //       widget.bebidasdetalle['rank'].toString(),
+                              //       style: const TextStyle(
+                              //           color: Colors.black,
+                              //           fontSize: 20,
+                              //           fontWeight: FontWeight.bold),
+                              //     )),
                             ]),
                       ),
                       Padding(
@@ -191,7 +191,7 @@ class _BebidasState extends State<Bebidas> {
                               SizedBox(
                                   width: anchodeta * 0.5,
                                   child: Text(
-                                    widget.bebidasdetalle['status'].toString(),
+                                    widget.bebidasdetalle['strAlcoholic'].toString(),
                                     style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,

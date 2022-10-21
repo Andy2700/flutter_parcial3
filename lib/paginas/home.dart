@@ -156,35 +156,35 @@ class _HomeState extends State<Home> {
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(20))),
                                   child: Stack(children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 20, left: 20, top: 7),
-                                      child: SizedBox(
-                                          child: Text(
-                                        "Puesto ${listabebidas[index]['rank']}°",
-                                        textAlign: TextAlign.center,
-                                        // ignore: prefer_const_constructors
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 12,
-                                            color: listabebidas[index]['rank'] ==
-                                                    1
-                                                ? Colors.amber[400]
-                                                : listabebidas[index]['rank'] == 2
-                                                    ? Colors.blueGrey[300]
-                                                    : listabebidas[index]
-                                                                ['rank'] ==
-                                                            3
-                                                        ? Colors.brown
-                                                        : Colors.black),
-                                      )),
-                                    ),
+                                    // Padding(
+                                    //   padding: const EdgeInsets.only(
+                                    //       right: 20, left: 20, top: 7),
+                                    //   child: SizedBox(
+                                    //       child: Text(
+                                    //     "Puesto ${listabebidas[index]['rank']}°",
+                                    //     textAlign: TextAlign.center,
+                                    //     // ignore: prefer_const_constructors
+                                    //     style: TextStyle(
+                                    //         fontWeight: FontWeight.bold,
+                                    //         fontSize: 12,
+                                    //         color: listabebidas[index]['rank'] ==
+                                    //                 1
+                                    //             ? Colors.amber[400]
+                                    //             : listabebidas[index]['rank'] == 2
+                                    //                 ? Colors.blueGrey[300]
+                                    //                 : listabebidas[index]
+                                    //                             ['rank'] ==
+                                    //                         3
+                                    //                     ? Colors.brown
+                                    //                     : Colors.black),
+                                    //   )),
+                                    // ),
                                     Padding(
                                       padding: const EdgeInsets.only(
                                           right: 20, left: 20, top: 25),
                                       child: SizedBox(
                                           child: Text(
-                                        listabebidas[index]['title'],
+                                        listabebidas[index]['strDrink'],
                                         maxLines: 2,
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
@@ -198,8 +198,7 @@ class _HomeState extends State<Home> {
                                       bottom: 0,
                                       right: 0,
                                       child: CachedNetworkImage(
-                                        imageUrl: listabebidas[index]['images']
-                                            ['jpg']['image_url'],
+                                        imageUrl: listabebidas[index]['strDrinkThumb'],
                                         fit: BoxFit.fill,
                                       ),
                                     ),
